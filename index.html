@@ -34,13 +34,105 @@
             <li><a href="#box">Box</a></li>
              <li><a href="#ufc">Ufc</a></li>
               <li><a href="#ultimas noticias">Ultimas noticias</a></li>
-          <li><a class="btn-shop" href="#donar">Shop</a></li>
+          <li><a class="btn-dona" href="#donar">Shop</a></li>
           
         </ul>
       </nav>
       <button id="menuToggle" class="menu-toggle">☰</button>
     </div>
   </header>
+
+<!-- AQUÍ INICIA EL MAIN   -->
+  <main>
+    <!-- HERO con video, SI NO QUIERO VIDEO, pendiente cambiarlo -->
+    <section class="hero video-hero">
+      <video class="hero-video" id="heroVideo" autoplay loop playsinline>
+        <source src="img/Video_pies_con_cora.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+      
+<!-- estos son los botones que estan dentro del video-->
+
+      <div class="hero-content container">
+        <div class="hero-actions">
+          <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">Unete al equipo</a>
+          <a class="btn outline" href="#voluntariado">Comunidad</a>
+        </div>
+
+  <!-- estas tarjetas es para colocar Estadisticas-->
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-number">+1000</div>
+            <div class="stat-label">Estadisticas</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+5</div>
+            <div class="stat-label">Socios</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+15</div>
+            <div class="stat-label">Colaboradores</div>
+          </div>
+        </div>
+      </div>
+    </section> <!--Fin hero y cierra las estadísticas y todo-->
+    
+  <!--Aquí hay tres tarjetas para destacar proyectos, ventas o servicios-->
+
+    <section id="proyectos" class="projects container">
+      <h2>Estadisticas NFL</h2>
+      <p class="lead">Tenmos las últimas estadisticas actualizadas y divididas por conferencia, y división</p>
+
+      <div class="project-cards">
+        <article class="card">
+          <div class="card-img" id="antioquia-caucasia"></div>
+          <div class="card-body">
+            <h3>Estadisticas UFC</h3>
+            <p> Estadisticas de todos los peleadores, por peso, junto con cuantos patadas lanzó, cuantos golpes recibe, cuanto golpes da, etc.
+             </p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img" id="guajira"></div>
+          <div class="card-body">
+            <h3>Estadisticas BOX</h3>
+            <p>Tenemos todas las estadisticas de todos oos tipos de golpes que lanzo por round, y de cada peleador por división.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img" id="cordoba"></div>
+          <div class="card-body">
+            <h3>Ultimas Noticias</h3>
+            <p>Aqui encontraras todas la ultimas noticias de la NFL, BOX y UFC.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img" id="mexico"></div>
+          <div class="card-body">
+            <h3>Estadisticas NFL</h3>
+            <p>Aqui encontraras todas la ultimas noticias de la NFL, BOX y UFC.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contacto" class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <h2>¡No te pierdas lo último!</h2>
+          <p>Suscríbete para recibir noticias, y pequeños regalos de merch.</p>
+        </div>
+        <form id="subscribeForm" class="subscribe-form" novalidate>
+          <input id="email" type="email" placeholder="Tu correo electrónico" required />
+          <button class="btn primary" type="submit">Suscribirme</button>
+        </form>
+        <div id="formMessage" class="form-message"></div>
+      </div>
+    </section>
+  </main>
 
 <!--AQUÍ INICIA EL FOOTER-->
   <footer>
@@ -73,7 +165,7 @@
 
   <div class="footer-bottom">
     <div class="container">
-      &copy; <span id="anio"></span> DEL NORTH CAPS
+      &copy; <span id="anio"></span> SPORTPULSE
     </div>
   </div>
 
