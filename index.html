@@ -45,15 +45,40 @@
 <!-- AQUÍ INICIA EL MAIN   -->
   <main>
     <!-- HERO con video, SI NO QUIERO VIDEO, pendiente cambiarlo -->
-    <section class="hero video-hero">
-      <video class="hero-video" id="heroVideo" autoplay loop playsinline>
+    <!--<section class="hero video-hero">
+      <!--<video class="hero-video" id="heroVideo" autoplay loop playsinline>
         <source src="img/Video_pies_con_cora.mp4" type="video/mp4" />
       </video>
-      <div class="hero-overlay"></div>
+      <div class="hero-overlay"></div>-->
       
 <!-- estos son los botones que estan dentro del video-->
 
-      <div class="hero-content container">
+    <!--</section> <!--Fin hero y cierra las estadísticas y todo-->
+
+     <!-- CARRUSEL DE IMÁGENES / LANZAMIENTOS / PRODUCTOS ETC -->
+    <section id="lanzamientos" class="carousel-section container">
+      <h2>Nuevos Lanzamientos</h2>
+     
+
+      <div class="carousel" id="carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide">
+            <img src="img/NFL.02.avif" alt="Consultorías TechIY">
+            <p class="carousel-caption">NFL</p>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="img/BOX.02.avif" alt="Talleres TechIY">
+            <p class="carousel-caption">Talleres</p>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="img/UFC.02.avif" alt="Asesorías TechIY">
+            <p class="carousel-caption">Asesorías</p>
+          </div>
+        </div>
+
+         <div class="hero-content container">
         <div class="hero-actions">
           <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">Unete al equipo</a>
           <a class="btn outline" href="#voluntariado">Comunidad</a>
@@ -75,13 +100,20 @@
           </div>
         </div>
       </div>
-    </section> <!--Fin hero y cierra las estadísticas y todo-->
+
+        <button class="carousel-btn prev" id="carouselPrev" aria-label="Anterior">&#10094;</button>
+        <button class="carousel-btn next" id="carouselNext" aria-label="Siguiente">&#10095;</button>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </section>
+    <!-- FIN CARRUSEL -->
     
   <!--Aquí hay tres tarjetas para destacar proyectos, ventas o servicios-->
 
     <section id="proyectos" class="projects container">
-      <h2>Estadisticas NFL</h2>
-      <p class="lead">Tenmos las últimas estadisticas actualizadas y divididas por conferencia, y división</p>
+      <h2>Estadisticas de Contacto</h2>
+      <p class="lead">Tenemos las últimas estadisticas actualizadas de los deportes de contacto como el BOX, NFL Y UFC</p>
 
       <div class="project-cards">
         <article class="card">
